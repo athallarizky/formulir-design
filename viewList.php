@@ -38,7 +38,7 @@
                         <?php while($row = $result -> fetch_assoc()):?>
 
                         <div class="column ">
-                            <a href="view">
+                            <a href="view?id=<?=$row["id"] ?>">
                                 <div class="card student-card ">
                                     <div class="card-content">
                                         <div class="number"><?= $i++ ?></div>

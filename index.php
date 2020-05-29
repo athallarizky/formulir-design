@@ -70,7 +70,7 @@
                                                 <div class="control">
                                                     <input class="input is-primary birth-date" type="text"
                                                         placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                        name="tanggalLahir" required>
+                                                        name="tanggalLahir" required autocomplete="off">
                                                 </div>
                                             </div>
                                         </td>
@@ -231,7 +231,7 @@
                                                         <div class="control">
                                                             <input class="input is-primary birth-date" type="text"
                                                                 placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                                name="tanggalLahirAyah">
+                                                                name="tanggalLahirAyah" autocomplete="off">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -255,7 +255,7 @@
                                                         <div class="control">
                                                             <input class="input is-primary birth-date" type="text"
                                                                 placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                                name="tanggalLahirIbu">
+                                                                name="tanggalLahirIbu" autocomplete="off">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -348,8 +348,9 @@
                             </p>
                         </div>
                         <div class="submit-button">
-                            <button type="submit" class="button is-primary btn-send" name="submit">Kirim
-                                Formulir</button>
+                            <button type="submit" class="button is-primary btn-send" name="submit">
+                                Kirim Formulir
+                            </button>
                         </div>
                 </div>
                 </form>
@@ -362,7 +363,10 @@
 
 </body>
 <script>
-    $('[data-toggle="datepicker"]').datepicker()
+    $('[data-toggle="datepicker"]').datepicker({
+        format: 'dd-mm-yyyy'
+    })
+    
     
 
     if( $('#terms:checked').length > 0 ) $('.btn-send').attr("disabled", false)
