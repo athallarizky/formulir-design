@@ -1,4 +1,6 @@
 <?php
+    setlocale (LC_TIME, 'id_ID'); 
+    date_default_timezone_set('Asia/Jakarta');
 
     $db_host = "localhost";
     $db_user = "root";

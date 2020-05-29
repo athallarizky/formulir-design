@@ -1,5 +1,4 @@
 <?php
-setlocale (LC_TIME, 'id_ID'); date_default_timezone_set('Asia/Jakarta');
 require_once "connection.php";
 
 $i = $_POST;
@@ -81,8 +80,16 @@ if(isset($i['submit'])){
 
     $result = $mysqli->query($query);
 
-    if($result) echo "Berhasil Upload";
-    else echo "Gagal upload";
+    if($result){
+        echo '<script type="text/javascript">';
+        echo 'alert("Selamat! Kamu berhasil mendaftar!");';
+        echo '</script>';
+    }
+    else{
+        echo '<script type="text/javascript">';
+        echo 'alert("Maaf! Kamu gagal mendaftar. Silahkan coba lagi ya!");';
+        echo '</script>';
+    }
 }
 
 ?>

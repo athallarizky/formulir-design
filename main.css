@@ -127,6 +127,41 @@ html,body{
     padding: 10px 0;
 }
 
+.student-card{
+    border-radius: 2px;
+    border: 0.01px solid #2d3436;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 10px 5px;
+}
+
+.card-content .number{
+    margin:0;
+    width: 100%;
+    border-radius: 2px;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.card-content .image{
+    margin: 10px 0 !important;
+}
+
+.card-content>h6{
+    margin-bottom: 0 !important;
+}
+
+.card-content>p{
+    text-align: center;
+    opacity: 80%;
+}
+
 /* Media Queries */
 
 @media (max-width: 576px) {
@@ -209,6 +244,10 @@ html,body{
 
     .content-signature>p{
         margin: 20px 0 0 0;
+        font-size: 15px;
+    }
+
+    .card-content>p{
         font-size: 15px;
     }
 

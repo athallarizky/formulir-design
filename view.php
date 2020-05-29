@@ -22,7 +22,7 @@
                 </p>
 
                 <div class="content-information">
-                    <form action="function/input" method="POST">
+                    <form action="function/input.php" method="POST">
                         <ol type="A" class="sub-content-info">
                             <li>Murid</li>
                             <div class="table-container">
@@ -36,7 +36,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nama Lengkap" name="namaLengkap" required>
+                                                        placeholder="Nama Lengkap" name="namaLengkap" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -50,7 +50,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nama Panggilan" name="namaPanggilan" required>
+                                                        placeholder="Nama Panggilan" name="namaPanggilan" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -64,13 +64,13 @@
                                             <div class="field birth-data">
                                                 <div class="control">
                                                     <input class="input is-primary birth-place" type="text"
-                                                        placeholder="Tempat Lahir" name="tempatLahir" required>
+                                                        placeholder="Tempat Lahir" name="tempatLahir" readonly>
                                                 </div>
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                                 <div class="control">
                                                     <input class="input is-primary birth-date" type="text"
                                                         placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                        name="tanggalLahir" required>
+                                                        name="tanggalLahir" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -83,15 +83,8 @@
                                         <td>
                                             <div class="field">
                                                 <div class="control">
-                                                    <label class="radio">
-                                                        <input type="radio" name="jenisKelamin" value="Laki-laki"
-                                                            checked>
-                                                        Laki-laki
-                                                    </label>
-                                                    <label class="radio">
-                                                        <input type="radio" name="jenisKelamin" value="Perempuan">
-                                                        Perempuan
-                                                    </label>
+                                                    <input class="input is-primary birth-place" type="text"
+                                                        placeholder="Jenis Kelamin" name="jenisKelamin" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -105,7 +98,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text" placeholder="Anak ke-"
-                                                        name="anakKe" required>
+                                                        name="anakKe" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -119,7 +112,8 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <textarea class="textarea address is-primary"
-                                                        placeholder="Alamat Lengkap" name="alamatLengkap" required></textarea>
+                                                        placeholder="Alamat Lengkap" name="alamatLengkap"
+                                                        readonly></textarea>
                                                 </div>
                                             </div>
                                         </td>
@@ -133,7 +127,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nomor Telepon" name="nomorTelepon" required>
+                                                        placeholder="Nomor Telepon" name="nomorTelepon" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -147,7 +141,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text" placeholder="Pendidikan"
-                                                        name="pendidikan">
+                                                        name="pendidikan" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -161,7 +155,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Kelas/kelompok" name="kelasKelompok">
+                                                        placeholder="Kelas/kelompok" name="kelasKelompok" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -189,7 +183,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text" placeholder="Nama Ayah"
-                                                        name="namaAyah">
+                                                        name="namaAyah" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -203,7 +197,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text" placeholder="Nama Ibu"
-                                                        name="namaIbu">
+                                                        name="namaIbu" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -225,13 +219,13 @@
                                                     <div class="field birth-data">
                                                         <div class="control">
                                                             <input class="input is-primary birth-place" type="text"
-                                                                placeholder="Tempat Lahir" name="tempatLahirAyah">
+                                                                placeholder="Tempat Lahir" name="tempatLahirAyah" readonly>
                                                         </div>
                                                         <i class="fa fa-calendar" aria-hidden="true"></i>
                                                         <div class="control">
                                                             <input class="input is-primary birth-date" type="text"
                                                                 placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                                name="tanggalLahirAyah">
+                                                                name="tanggalLahirAyah" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,13 +243,13 @@
                                                     <div class="field birth-data">
                                                         <div class="control">
                                                             <input class="input is-primary birth-place" type="text"
-                                                                placeholder="Tempat Lahir" name="tempatLahirIbu">
+                                                                placeholder="Tempat Lahir" name="tempatLahirIbu" readonly>
                                                         </div>
                                                         <i class="fa fa-calendar" aria-hidden="true"></i>
                                                         <div class="control">
                                                             <input class="input is-primary birth-date" type="text"
                                                                 placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                                name="tanggalLahirIbu">
+                                                                name="tanggalLahirIbu" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -277,7 +271,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Pekerjaan Ayah" name="pekerjaanAyah">
+                                                        placeholder="Pekerjaan Ayah" name="pekerjaanAyah" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -291,7 +285,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Pekerjaan Ibu" name="pekerjaanIbu">
+                                                        placeholder="Pekerjaan Ibu" name="pekerjaanIbu" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -311,7 +305,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Pendidikan Ayah" name="pendidikanAyah">
+                                                        placeholder="Pendidikan Ayah" name="pendidikanAyah" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -325,7 +319,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Pendidikan Ibu" name="pendidikanIbu">
+                                                        placeholder="Pendidikan Ibu" name="pendidikanIbu" readonly>
                                                 </div>
                                             </div>
                                         </td>
@@ -335,22 +329,8 @@
                             </div>
 
                         </ol>
-                        <div class="content-notes"><b>*)</b> Kosongkan yang tidak perlu</div>
 
-                        <label class="checkbox">
-                            <input type="checkbox" id="terms" onchange="isChecked()">
-                            Saya mengisi form diatas dengan sebenar-benarnya.
-                        </label>
-                        <div class="content-signature">
-                            <p>
-                                (Tangerang,
-                                <?= strftime( "%e %B %G", time());?>)
-                            </p>
-                        </div>
-                        <div class="submit-button">
-                            <button type="submit" class="button is-primary btn-send" name="submit">Kirim
-                                Formulir</button>
-                        </div>
+                        <div class="content-notes" style="text-align:center">Dokumen ini dibuat pada tanggal: <b>12 Maret 2020</b> </div>
                 </div>
                 </form>
 
@@ -361,18 +341,3 @@
     </div>
 
 </body>
-<script>
-    $('[data-toggle="datepicker"]').datepicker()
-    
-
-    if( $('#terms:checked').length > 0 ) $('.btn-send').attr("disabled", false)
-    else $('.btn-send').attr("disabled", true)
-
-    const isChecked = () => {
-        let checked = $('#terms:checked').length > 0
-        !checked ? $('.btn-send').attr("disabled", true) : $(
-            '.btn-send').attr("disabled", false)
-    }
-</script>
-
-</html>
