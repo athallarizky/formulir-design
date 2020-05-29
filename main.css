@@ -4,9 +4,6 @@
     padding:0;
 }
 
-/* font-family: 'Caladea', serif;
-font-family: 'Roboto', sans-serif; */
-
 html,body{
     width: 100%;
     height: 100%;
@@ -32,7 +29,6 @@ html,body{
 .header{
     width: 100%;
     text-align: center;
-    /* background-color: rebeccapurple; */
     letter-spacing: 1.5px;
     padding: 50px 0 0 0;
     color: #2d3436;
@@ -51,18 +47,15 @@ html,body{
 }
 
 .content{
-    /* background-color: royalblue; */
     letter-spacing: 1.5px;
 }
 
 .content-date{
-    /* background-color: saddlebrown; */
     text-transform: uppercase;
     text-align: center;
 }
 
 .content-notes{
-    /* background-color: tomato; */
     padding: 10px 0;
 }
 
@@ -81,7 +74,6 @@ html,body{
 .table-row > td:nth-child(odd){
     padding-right: 0;
     text-align: center;
-    /* background-color: saddlebrown !important; */
 }
 
 .table-row > td{
@@ -89,19 +81,16 @@ html,body{
 }
 
 .control > input{
-    /* background-color: sandybrown; */
     border: transparent;
     border-radius: 0;
     border-bottom: 2px solid #2d3436;
 }
 
 .birth-data{
-    /* background-color: teal; */
     display: flex;
 }
 
 .birth-data>.control{
-    /* background-color: tomato; */
     margin-right: 20px;
     width: 100%;
 }
@@ -129,7 +118,6 @@ html,body{
     display: inline-block;
     text-align: center;
     opacity: 0.5;
-    /* background-color: turquoise; */
 }
 
 .submit-button{
@@ -169,12 +157,7 @@ html,body{
         width: 100%;
     }
 
-    .table{
-        /* display: flex; */
-    }
-
     .table-row{
-        /* display: block; */
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;

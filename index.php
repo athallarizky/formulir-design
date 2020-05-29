@@ -52,7 +52,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nama Lengkap" name="namaLengkap">
+                                                        placeholder="Nama Lengkap" name="namaLengkap" required>
                                                 </div>
                                             </div>
                                         </td>
@@ -66,7 +66,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nama Panggilan" name="namaPanggilan">
+                                                        placeholder="Nama Panggilan" name="namaPanggilan" required>
                                                 </div>
                                             </div>
                                         </td>
@@ -80,13 +80,13 @@
                                             <div class="field birth-data">
                                                 <div class="control">
                                                     <input class="input is-primary birth-place" type="text"
-                                                        placeholder="Tempat Lahir" name="tempatLahir">
+                                                        placeholder="Tempat Lahir" name="tempatLahir" required>
                                                 </div>
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                                 <div class="control">
                                                     <input class="input is-primary birth-date" type="text"
                                                         placeholder="Tanggal Lahir" data-toggle="datepicker"
-                                                        name="tanggalLahir">
+                                                        name="tanggalLahir" required>
                                                 </div>
                                             </div>
                                         </td>
@@ -121,7 +121,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text" placeholder="Anak ke-"
-                                                        name="anakKe">
+                                                        name="anakKe" required>
                                                 </div>
                                             </div>
                                         </td>
@@ -135,7 +135,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <textarea class="textarea address is-primary"
-                                                        placeholder="Alamat Lengkap" name="alamatLengkap"></textarea>
+                                                        placeholder="Alamat Lengkap" name="alamatLengkap" required></textarea>
                                                 </div>
                                             </div>
                                         </td>
@@ -149,7 +149,7 @@
                                             <div class="field">
                                                 <div class="control">
                                                     <input class="input is-primary" type="text"
-                                                        placeholder="Nomor Telepon" name="nomorTelepon">
+                                                        placeholder="Nomor Telepon" name="nomorTelepon" required>
                                                 </div>
                                             </div>
                                         </td>
@@ -380,10 +380,10 @@
 <script>
     $('[data-toggle="datepicker"]').datepicker()
     $('.btn-send').attr("disabled", true)
-    $('#terms').prop('checked', false)
 
     const isChecked = () => {
-        let checked = $('#terms:checked').length > 0!checked ? $('.btn-send').attr("disabled", true) : $(
+        let checked = $('#terms:checked').length > 0
+        !checked ? $('.btn-send').attr("disabled", true) : $(
             '.btn-send').attr("disabled", false)
     }
 </script>

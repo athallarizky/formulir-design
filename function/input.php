@@ -1,4 +1,6 @@
 <?php
+setlocale (LC_TIME, 'id_ID'); date_default_timezone_set('Asia/Jakarta');
+require_once "connection.php";
 
 $i = $_POST;
 
@@ -14,6 +16,7 @@ if(isset($i['submit'])){
     $nomorTelepon = $i['nomorTelepon'];
     $pendidikan = $i['pendidikan'];
     $kelasKelompok = $i['kelasKelompok'];
+    $createdAt = strftime( "%e %B %G", time());
 
     // Data Ayah
     $namaAyah = $i['namaAyah'];
@@ -29,7 +32,57 @@ if(isset($i['submit'])){
     $pekerjaanIbu = $i['pekerjaanIbu'];
     $pendidikanIbu = $i['pendidikanIbu'];
 
+    $query = "INSERT INTO data_siswa(
+        namaLengkap,
+        namaPanggilan,
+        tempatLahir,
+        tanggalLahir,
+        jenisKelamin,
+        anakKe,
+        alamatLengkap,
+        nomorTelepon,
+        pendidikan,
+        kelasKelompok,
+        namaAyah,
+        tempatLahirAyah,
+        tanggalLahirAyah,
+        pekerjaanAyah,
+        pendidikanAyah,
+        namaIbu,
+        tempatLahirIbu,
+        tanggalLahirIbu,
+        pekerjaanIbu,
+        pendidikanIbu,
+        created_at
+    ) VALUES(
+        '$namaLengkap', 
+        '$namaPanggilan',
+        '$tempatLahir',
+        '$tanggalLahir',
+        '$jenisKelamin',
+        '$anakKe',
+        '$alamatLengkap',
+        '$nomorTelepon',
+        '$pendidikan',
+        '$kelasKelompok',
+        '$namaAyah',
+        '$tempatLahirAyah',
+        '$tanggalLahirAyah',
+        '$pekerjaanAyah',
+        '$pendidikanAyah',
+        '$namaIbu',
+        '$tempatLahirIbu',
+        '$tanggalLahirIbu',
+        '$pekerjaanIbu',
+        '$pendidikanIbu',
+        '$createdAt'
 
+        )";
+
+    $result = $mysqli->query($query);
+
+    if($result) echo "Berhasil Upload";
+    else echo "Gagal upload";
 }
 
 ?>
