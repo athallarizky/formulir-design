@@ -80,16 +80,8 @@ if(isset($i['submit'])){
 
     $result = $mysqli->query($query);
 
-    if($result){
-        echo '<script type="text/javascript">';
-        echo 'alert("Selamat! Kamu berhasil mendaftar!");';
-        echo '</script>';
-    }
-    else{
-        echo '<script type="text/javascript">';
-        echo 'alert("Maaf! Kamu gagal mendaftar. Silahkan coba lagi ya!");';
-        echo '</script>';
-    }
+    if($result) header("Location:../result?status=success");
+    else header("Location:../result?status=failed");
 }
 
 ?>

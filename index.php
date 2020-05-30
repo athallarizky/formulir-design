@@ -104,7 +104,7 @@
                                         <td>
                                             <div class="field">
                                                 <div class="control">
-                                                    <input class="input is-primary" type="text" placeholder="Anak ke-"
+                                                    <input class="input is-primary" type="number" placeholder="Anak ke-"
                                                         name="anakKe" required>
                                                 </div>
                                             </div>
